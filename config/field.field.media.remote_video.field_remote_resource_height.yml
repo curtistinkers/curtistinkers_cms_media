@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_remote_resource_height
+    - media.type.remote_video
+id: media.remote_video.field_remote_resource_height
+field_name: field_remote_resource_height
+entity_type: media
+bundle: remote_video
+label: 'Resource height'
+description: 'The height of the remote video in pixels.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

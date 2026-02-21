@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.svg_image
+id: media.svg_image.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: svg_image
+label: 'File size'
+description: 'The file size of the SVG image in bytes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' byte|bytes'
+field_type: integer

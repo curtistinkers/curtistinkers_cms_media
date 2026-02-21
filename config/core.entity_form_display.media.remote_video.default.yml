@@ -1,0 +1,171 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_remote_author_owner_name
+    - field.field.media.remote_video.field_remote_cache_lifetime
+    - field.field.media.remote_video.field_remote_default_name
+    - field.field.media.remote_video.field_remote_provider_name
+    - field.field.media.remote_video.field_remote_provider_url
+    - field.field.media.remote_video.field_remote_resource_height
+    - field.field.media.remote_video.field_remote_resource_html
+    - field.field.media.remote_video.field_remote_resource_source_url
+    - field.field.media.remote_video.field_remote_resource_type
+    - field.field.media.remote_video.field_remote_resource_width
+    - field.field.media.remote_video.field_remote_thumbnail_height
+    - field.field.media.remote_video.field_remote_thumbnail_local_uri
+    - field.field.media.remote_video.field_remote_thumbnail_width
+    - media.type.remote_video
+  module:
+    - media
+    - path
+    - text
+id: media.remote_video.default
+targetEntityType: media
+bundle: remote_video
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_author_owner_name:
+    type: string_textfield
+    weight: 102
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_cache_lifetime:
+    type: string_textfield
+    weight: 105
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_default_name:
+    type: string_textfield
+    weight: 106
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_provider_name:
+    type: string_textfield
+    weight: 103
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_provider_url:
+    type: string_textfield
+    weight: 104
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_resource_height:
+    type: number
+    weight: 112
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_resource_html:
+    type: text_textarea
+    weight: 113
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_resource_source_url:
+    type: string_textfield
+    weight: 110
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_resource_type:
+    type: string_textfield
+    weight: 101
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_resource_width:
+    type: number
+    weight: 111
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_thumbnail_height:
+    type: number
+    weight: 108
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_thumbnail_local_uri:
+    type: string_textfield
+    weight: 107
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_remote_thumbnail_width:
+    type: number
+    weight: 109
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  name: true
+  publish_on: true
+  publish_state: true
+  unpublish_on: true
+  unpublish_state: true

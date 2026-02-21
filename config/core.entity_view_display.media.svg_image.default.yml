@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.svg_image.field_file_size
+    - field.field.media.svg_image.field_image_height
+    - field.field.media.svg_image.field_image_width
+    - field.field.media.svg_image.field_media_svg_image
+    - field.field.media.svg_image.field_mime_type
+    - image.style.large
+    - media.type.svg_image
+  module:
+    - svg_image
+id: media.svg_image.default
+targetEntityType: media
+bundle: svg_image
+mode: default
+content:
+  field_media_svg_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: 960
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_file_size: true
+  field_image_height: true
+  field_image_width: true
+  field_mime_type: true
+  name: true
+  thumbnail: true
+  uid: true

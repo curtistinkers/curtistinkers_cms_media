@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_remote_thumbnail_local_uri
+    - media.type.remote_video
+id: media.remote_video.field_remote_thumbnail_local_uri
+field_name: field_remote_thumbnail_local_uri
+entity_type: media
+bundle: remote_video
+label: 'Thumbnail local URI'
+description: 'The local URI of the thumbnail for the remote video.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

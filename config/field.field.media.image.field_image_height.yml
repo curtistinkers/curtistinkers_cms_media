@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_height
+    - media.type.image
+id: media.image.field_image_height
+field_name: field_image_height
+entity_type: media
+bundle: image
+label: Height
+description: 'The height of the image in pixels'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

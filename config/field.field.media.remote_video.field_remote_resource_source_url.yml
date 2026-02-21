@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_remote_resource_source_url
+    - media.type.remote_video
+id: media.remote_video.field_remote_resource_source_url
+field_name: field_remote_resource_source_url
+entity_type: media
+bundle: remote_video
+label: 'Resource source URL'
+description: 'The resource source URL for the remote video.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

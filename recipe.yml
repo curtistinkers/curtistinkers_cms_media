@@ -1,0 +1,9 @@
+name: Media
+description: Provides media entities.
+type: Curtis Tinkers CMS
+recipes:
+  - drupal_cms_content_type_base
+  - drupal_cms_media
+install:
+  - media
+  - media_library

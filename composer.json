@@ -1,0 +1,8 @@
+{
+    "name": "curtistinkers/curtistinkers_cms_media",
+    "type": "drupal-recipe",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "drupal/drupal_cms_media": "^2"
+    }
+}

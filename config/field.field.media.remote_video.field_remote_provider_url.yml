@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_remote_provider_url
+    - media.type.remote_video
+id: media.remote_video.field_remote_provider_url
+field_name: field_remote_provider_url
+entity_type: media
+bundle: remote_video
+label: 'Provider URL'
+description: 'The URL of the remote video provider.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
