@@ -13,4 +13,4 @@ composer require curtistinkers/curtistinkers_cms_media
 ```
 
 ## Bugs and Feedback
-If you encounter any bugs or have feedback about this recipe, please file an issue in the [Curtis Tinkers CMS issue queue](https://www.github.com/curtistinkers/curtis_cms_media/issues).
+If you encounter any bugs or have feedback about this recipe, please file an issue in the [Curtis Tinkers CMS issue queue](https://github.com/curtistinkers/curtistinkers_cms_media/issues).
