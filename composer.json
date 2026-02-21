@@ -2,6 +2,27 @@
     "name": "curtistinkers/curtistinkers_cms_media",
     "type": "drupal-recipe",
     "license": ["GPL-2.0-or-later"],
+    "authors": [
+        {
+            "name": "curtistinkers",
+            "homepage": "https://curtistinkers.com",
+            "role": "Creator"
+        }
+    ],
+    "keywords": [
+        "drupal", "drupal-cms", "drupal-recipe", "curtistinkers-cms"
+    ],
+    "support": {
+        "source": "https://github.com/curtistinkers/curtistinkers_cms_media",
+        "issues": "https://github.com/curtistinkers/curtistinkers_cms_media/issues"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8",
+            "only": ["drupal-module/*, drupal-theme/*, drupal-recipe/*, drupal-profile/*"]
+        }
+    },
     "require": {
         "drupal/drupal_cms_media": "^2"
     }
