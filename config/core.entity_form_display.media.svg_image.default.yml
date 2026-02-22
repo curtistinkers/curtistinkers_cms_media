@@ -7,9 +7,11 @@ dependencies:
     - field.field.media.svg_image.field_image_width
     - field.field.media.svg_image.field_media_svg_image
     - field.field.media.svg_image.field_mime_type
+    - image.style.media_library
     - media.type.svg_image
   module:
     - path
+    - svg_image
 id: media.svg_image.default
 targetEntityType: media
 bundle: svg_image
@@ -17,34 +19,34 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  name:
-    type: string_textfield
+  field_media_svg_image:
+    type: image_image
     weight: 0
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      progress_indicator: throbber
+      preview_image_style: media_library
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 4
+    weight: 100
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -56,8 +58,8 @@ hidden:
   field_file_size: true
   field_image_height: true
   field_image_width: true
-  field_media_svg_image: true
   field_mime_type: true
+  name: true
   publish_on: true
   publish_state: true
   unpublish_on: true

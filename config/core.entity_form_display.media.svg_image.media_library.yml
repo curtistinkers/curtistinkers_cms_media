@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.svg_image.field_image_width
     - field.field.media.svg_image.field_media_svg_image
     - field.field.media.svg_image.field_mime_type
-    - image.style.thumbnail
+    - image.style.media_library
     - media.type.svg_image
   module:
     - svg_image
@@ -23,7 +23,7 @@ content:
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: media_library
     third_party_settings: {  }
   name:
     type: string_textfield
