@@ -22,7 +22,15 @@ id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
 mode: media_library
-content: {  }
+content:
+  name:
+    type: string_textfield
+    weight: -1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_oembed_video: true
@@ -39,11 +47,9 @@ hidden:
   field_remote_thumbnail_height: true
   field_remote_thumbnail_local_uri: true
   field_remote_thumbnail_width: true
-  name: true
   path: true
   publish_on: true
   publish_state: true
-  scheduler_settings: true
   status: true
   uid: true
   unpublish_on: true
