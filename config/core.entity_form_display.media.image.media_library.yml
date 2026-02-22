@@ -8,22 +8,32 @@ dependencies:
     - field.field.media.image.field_image_width
     - field.field.media.image.field_media_image
     - field.field.media.image.field_mime_type
-    - image.style.thumbnail
+    - image.style.media_library
     - media.type.image
   module:
-    - svg_image
+    - focal_point
 id: media.image.media_library
 targetEntityType: media
 bundle: image
 mode: media_library
 content:
   field_media_image:
-    type: image_image
+    type: image_focal_point
     weight: 1
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: media_library
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true
@@ -31,11 +41,9 @@ hidden:
   field_image_height: true
   field_image_width: true
   field_mime_type: true
-  name: true
   path: true
   publish_on: true
   publish_state: true
-  scheduler_settings: true
   status: true
   uid: true
   unpublish_on: true
